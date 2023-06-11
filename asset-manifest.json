@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/quanto_custa_obra/static/css/main.e6c13ad2.css",
-    "main.js": "/quanto_custa_obra/static/js/main.72f2a909.js",
+    "main.css": "/quanto_custa_obra/static/css/main.a2e2074c.css",
+    "main.js": "/quanto_custa_obra/static/js/main.c677b1df.js",
     "index.html": "/quanto_custa_obra/index.html",
-    "main.e6c13ad2.css.map": "/quanto_custa_obra/static/css/main.e6c13ad2.css.map",
-    "main.72f2a909.js.map": "/quanto_custa_obra/static/js/main.72f2a909.js.map"
+    "main.a2e2074c.css.map": "/quanto_custa_obra/static/css/main.a2e2074c.css.map",
+    "main.c677b1df.js.map": "/quanto_custa_obra/static/js/main.c677b1df.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.72f2a909.js"
+    "static/css/main.a2e2074c.css",
+    "static/js/main.c677b1df.js"
   ]
 }
