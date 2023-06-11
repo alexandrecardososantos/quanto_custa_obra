@@ -27,7 +27,9 @@ export default function Formulario01() {
   const [precoPadraoAlto, setPrecoPadraoAlto] = useState(0);
   const [precoPadraoAltoMoveis, setPrecoPadraoAltoMoveis] = useState(0);
 
-  function calculate() {
+  function calculate(e) {
+
+    e.preventDefault();
 
     setPrecoMuro( (((frenteFundo*2) + (laterais*2)) * 150).toLocaleString('pt-BR',{ style: 'currency', currency: 'BRL' }) );
     setPrecoPiscina( (piscina*1500).toLocaleString('pt-BR',{ style: 'currency', currency: 'BRL' }) );
@@ -52,8 +54,8 @@ export default function Formulario01() {
             <input
               placeholder="Área construída (m²)"
               type="text"
-              defaultValue={0}
-              value={areaConstruida}
+              // defaultValue={0}
+              value={areaConstruida || ""}
               onChange={(ev) => setAreaConstruida(+ev.target.value)}
             />
             <table>
@@ -73,8 +75,8 @@ export default function Formulario01() {
                     <input
                       placeholder="Metros"
                       type="text"
-                      defaultValue={0}
-                      value={frenteFundo}
+                      // defaultValue={0}
+                      value={frenteFundo || ""}
                       onChange={(ev) => setFrenteFundo(+ev.target.value)}
                     />
                   </td>
@@ -85,8 +87,8 @@ export default function Formulario01() {
                     <input
                       placeholder="Metros"
                       type="text"
-                      defaultValue={0}
-                      value={laterais}
+                      // defaultValue={0}
+                      value={laterais || ""}
                       onChange={(ev) => setLaterais(+ev.target.value)}
                     />
                   </td>
@@ -110,8 +112,8 @@ export default function Formulario01() {
                     <input
                       placeholder="Metros"
                       type="text"
-                      defaultValue={0}
-                      value={piscina}
+                      // defaultValue={0}
+                      value={piscina || ""}
                       onChange={(ev) => setPiscina(+ev.target.value)}
                     />
                   </td>
@@ -135,8 +137,8 @@ export default function Formulario01() {
                     <input
                       placeholder="Metros"
                       type="text"
-                      defaultValue={0}
-                      value={pisoExterno}
+                      // defaultValue={0}
+                      value={pisoExterno || ""}
                       onChange={(ev) => setPisoExterno(+ev.target.value)}
                     />
                   </td>
@@ -160,15 +162,17 @@ export default function Formulario01() {
                     <input
                       placeholder="Metros"
                       type="text"
-                      defaultValue={0}
-                      value={paisagismo}
+                      // defaultValue={0}
+                      value={paisagismo || ""}
                       onChange={(ev) => setPaisagismo(+ev.target.value)}
                     />
                   </td>
                 </tr>
               </tbody>
             </table>
-            <input className="btn_calc" onClick={calculate} placeholder="Calcular"/>
+            <button className="btn_calc" onClick={calculate}>
+              Calcular
+            </button>
             <table>
               <thead>
                 <tr>
@@ -200,8 +204,8 @@ export default function Formulario01() {
                   <th colSpan="4">Custo estimado final</th>
                 </tr>
                 <tr>
-                  <th>Padrão de imóvel</th>
-                  <th>Custo/m²</th>
+                  <th width="22%">Padrão de imóvel</th>
+                  <th width="25%">Custo/m²</th>
                   <th>Obra</th>
                   <th>Obra + Móveis</th>
                 </tr>

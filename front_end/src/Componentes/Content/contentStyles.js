@@ -13,7 +13,7 @@ export const ContentWrap = styled.div`
     align-items: center;
 
     ${media.desktop} {
-        width: 1000px
+        width: 900px
     }
 
     h3 {

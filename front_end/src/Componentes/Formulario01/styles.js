@@ -25,7 +25,7 @@ export const ContentWrap = styled.div`
     }
 
     .boxWrap {
-        width: 90%;
+        width: 95%;
         // border: 1px solid blue;
 
         ${media.desktop} {
@@ -38,37 +38,28 @@ export const ContentWrap = styled.div`
         .formulario {
             widht: 100%;
             // height: 150px;
-            border: solid gray;
+            // border: solid gray;
             display: flex;
             flex-flow: col;
             align-items: center;
 
-            input[type=text], select {
-                width: 55%;
-                padding: 4px 4px;
-                // margin: 8px 8px;
-                display: inline-block;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-                box-sizing: border-box;
-              }
-
-              .btn_calc {
-                width: 90%;
+            .btn_calc {
+                width: 100%;
                 background-color: #002B34;
                 color: white;
                 font-size: 15px;
+                // font-weight: bold;
                 text-align: center;
                 padding: 10px 10px;
-                margin: 8px 8px;
+                margin-top: 10px;
                 border: none;
                 border-radius: 4px;
                 cursor: pointer;
               }
               
-              .btn_calc:hover {
-                background-color: gray;
-              }
+            .btn_calc:hover {
+            background-color: gray;
+            }
 
             .area_construida {
                 margin: 8px 8px;
